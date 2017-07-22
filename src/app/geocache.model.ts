@@ -1,3 +1,3 @@
 export class Geocache {
-  constructor(public name: string){}
+  constructor(public creator: string, public lat: string, public lng: string, public address: string){}
 }

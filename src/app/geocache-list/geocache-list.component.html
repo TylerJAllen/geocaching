@@ -1,3 +1,20 @@
-<p>
-  geocache-list works!
-</p>
+<div *ngIf="currentRoute === '/roster-page'" class="wrapper">
+  <div class="geocacheItems" *ngFor="let geocache of geocaches | async" (click)="goToGeocacheDetailPage(geocache)">
+    <div class="thumbnailWrapper">
+      <img src="{{geocache.image}}" alt="">
+    </div>
+    <h3>{{geocache.name}}</h3>
+    <h3>{{geocache.position}}</h3>
+  </div>
+</div>
+
+<div *ngIf="currentRoute === '/admin'" class="wrapper">
+  <div class="geocacheItems geocacheItemsAdmin" *ngFor="let geocache of geocaches | async">
+    <!-- <div class="thumbnailWrapper">
+      <img src="{{geocache.image}}" alt="">
+    </div> -->
+    <h3 (click)="goToGeocacheDetailPage(geocache)">{{geocache.name}}</h3>
+    <hr>
+    <!-- <edit-geocache [selectedGeocache]="geocache"></edit-geocache> -->
+  </div>
+</div>
