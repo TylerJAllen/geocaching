@@ -13,8 +13,7 @@ import { Router } from '@angular/router';
 export class GeocacheListComponent implements OnInit {
   adding: boolean = false;
   geocaches: FirebaseListObservable<any[]>;
-  currentRoute: string = this.router.url;
-  
+
   constructor(private router: Router, private geocacheService: GeocacheService) { }
 
   ngOnInit() {
