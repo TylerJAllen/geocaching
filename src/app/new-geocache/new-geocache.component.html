@@ -1,36 +1,28 @@
-<div class="panel">
-  <div class="panel-heading">
-    <h3 class="panel-title">Add New Player</h3>
+<div class="newGeocacheForm">
+  <h3>Add New Geocache</h3>
+  <div>
+    <label>Creator:</label>
+    <br>
+    <input #newCreator>
   </div>
-  <div class="panel-body">
-    <div>
-      <div>
-        <label>Creator:</label>
-        <br>
-        <input #newCreator>
-      </div>
-
-      <div>
-        <label>Latitude:</label>
-        <br>
-        <input #newLatitude>
-      </div>
-
-      <div>
-        <label>Longitude:</label>
-        <br>
-        <input #newLongitude>
-      </div>
-
-      <div>
-        <label>Address:</label>
-        <br>
-        <input #newAddress>
-      </div>
-
-      <button (click)="submitForm(newCreator.value, newLatitude.value, newLongitude.value, newAddress.value)" class="btn">Add</button>
-      <!-- <button (click)="submitForm(newCreator.value, newLatitude.value, newLongitude.value, newAddress.value); newCreator.value=''; newLatitude.value=''; newLongitude.value=''; newAddress.value=''" class="btn">Add</button> -->
-
-    </div>
+  <div>
+    <label>Latitude:</label>
+    <br>
+    <input #newLatitude>
   </div>
+
+  <div>
+    <label>Longitude:</label>
+    <br>
+    <input #newLongitude>
+  </div>
+
+  <div>
+    <label>Address:</label>
+    <br>
+    <input #newAddress>
+  </div>
+
+  <button (click)="submitForm(newCreator.value, newLatitude.value, newLongitude.value, newAddress.value)" class="btn">Add</button>
+  <!-- <button (click)="submitForm(newCreator.value, newLatitude.value, newLongitude.value, newAddress.value); newCreator.value=''; newLatitude.value=''; newLongitude.value=''; newAddress.value=''" class="btn">Add</button> -->
 </div>

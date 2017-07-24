@@ -11,22 +11,8 @@ import { Router } from '@angular/router';
   providers: [GeocacheService]
 })
 export class WelcomeComponent implements OnInit {
-  adding: boolean = false;
-  geocaches: FirebaseListObservable<any[]>;
   constructor(private router: Router, private geocacheService: GeocacheService) { }
 
-
   ngOnInit() {
-    this.geocaches = this.geocacheService.getGeocaches();
   }
-
-  startAdding()
-  {
-    this.adding = true;
-  }
-
-  goToGeocacheDetailPage(clickedGeocache) {
-   this.router.navigate(['geocaches', clickedGeocache.$key]);
- };
-
 }

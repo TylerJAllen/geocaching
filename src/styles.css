@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+button {
+  height: 30px;
+  border-radius: 20px;
+  width: 50px;
+  background-color: #0BBF62;
+  border-style: none;
+}
+
+button:hover {
+  cursor: pointer;
+}

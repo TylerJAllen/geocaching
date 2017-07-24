@@ -1,3 +1,7 @@
-<p>
-  geocache-detail works!
-</p>
+<div class="geocacheText">
+  <h3>Address: {{(geocacheToDisplay).address}}</h3>
+  <h3>Longitude: {{(geocacheToDisplay).lat}}</h3>
+  <h3>Latitude: {{(geocacheToDisplay).lng}}</h3>
+  <h3>Creator: {{(geocacheToDisplay).creator}}</h3>
+  <button (click)="beginDeletingGeocache(geocacheToDisplay)">delete</button>
+</div>

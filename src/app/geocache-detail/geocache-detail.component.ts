@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { GeocacheService } from '../geocache.service';
@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
   providers: [GeocacheService]
 })
 export class GeocacheDetailComponent implements OnInit {
+  @Input() selectedGeocache;
   geocacheId: string = null;
   edit: boolean = false;
   showProperties: boolean = true;
@@ -33,6 +34,12 @@ export class GeocacheDetailComponent implements OnInit {
   editGeocache(){
     this.edit = true;
     this.showProperties = false;
+  }
+
+  beginDeletingGeocache(geocacheToDelete) {
+    console.log(geocacheToDelete);
+    this.geocacheService.deleteGeocache(geocacheToDelete);
+    this.router.navigate(['/geocaches']);
   }
 
 }

@@ -1,0 +1,25 @@
+.newGeocacheForm {
+  margin: 30px auto;
+  width: 800px;
+  text-align: center;
+}
+
+.newGeocacheForm div {
+  margin: 20px auto;
+}
+
+.newGeocacheForm label {
+  font-weight: bold;
+}
+
+.newGeocacheForm input {
+  border-radius: 10px;
+  width: 100%;
+  height: 30px;
+  border-style: none;
+  border: 2px solid #000000;
+  background-color: rgba(11, 218, 111, 0.5);
+  padding: 5px;
+  text-align: center;
+  font-size: 18px;
+}

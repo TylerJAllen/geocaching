@@ -1,0 +1,12 @@
+.geocacheText {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 800px;
+  border-radius: 20px;
+  background-color: rgba(11, 218, 111, 0.5);
+  margin: 30px auto;
+  padding: 5px;
+}

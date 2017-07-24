@@ -48,7 +48,7 @@ export class NewGeocacheComponent implements OnInit {
     // var newGeocache: Geocache = new Geocache(creator, returnedLat, returnedLng, returnedAddress);
 
 
-    // this.router.navigate(['']);
+    this.router.navigate(['geocaches']);
   }
 
 }

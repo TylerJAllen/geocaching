@@ -1,0 +1,12 @@
+.links {
+  height: 60px;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links a, .links a:visited {
+  text-decoration: none;
+  color: #000000;
+}

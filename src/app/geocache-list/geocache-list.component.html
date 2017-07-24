@@ -1,8 +1,8 @@
 <div class="wrapper">
   <div class="geocacheItems" *ngFor="let geocache of geocaches | async" (click)="goToGeocacheDetailPage(geocache)">
-    <h3>Creator: {{geocache.creator}}</h3>
+    <!-- <h3>Creator: {{geocache.creator}}</h3>
     <h3>Latitude: {{geocache.lat}}</h3>
-    <h3>Longitude: {{geocache.lng}}</h3>
-    <h3>Address: {{geocache.address}}</h3>
+    <h3>Longitude: {{geocache.lng}}</h3> -->
+    <h3>{{geocache.address}}</h3>
   </div>
 </div>
